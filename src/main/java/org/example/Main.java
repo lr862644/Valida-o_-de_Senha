@@ -14,11 +14,11 @@ public class Main {
         String usuario = scanner.nextLine();
         verifica.setUsuario(usuario);
         System.out.println("Digite uma senha:");
-        String senha0 = scanner.nextLine();
-        verifica.setSenha0(senha0);
+        String senhaPrincipal = scanner.nextLine();
+        verifica.setsenhaPrincipal(senhaPrincipal);
         System.out.println("Repita a senha:");
-        String senha1 = scanner.nextLine();
-        verifica.setSenha1(senha1);
-        verifica.validarSenha(senha0, senha1);
+        String senhaDeConfirmacao = scanner.nextLine();
+        verifica.setsenhaDeConfirmacao(senhaDeConfirmacao);
+        verifica.validarSenha(senhaPrincipal, senhaDeConfirmacao);
     }
     }
